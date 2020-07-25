@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Dropdown} from 'react-bootstrap';
 
 import './MessageSection.scss';
 
@@ -38,11 +39,24 @@ const MessageSection = () => {
                
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                 <p className="p2"> to <span> Assigned Person Name </span> </p>  
+
+                <Dropdown>
+            <Dropdown.Toggle  id="dropdown-basic">
                 <div className="notificationbar"> 
                     <div className="circle"> </div>
                     <div className="circle"> </div>
                     <div className="circle"> </div>
-                 </div> 
+                </div>
+            </Dropdown.Toggle>
+
+    <Dropdown.Menu>
+    <Dropdown.Item href="/">link 1</Dropdown.Item>
+    <Dropdown.Item href="/">link 2</Dropdown.Item>
+    <Dropdown.Item href="/">link 3</Dropdown.Item>
+     </Dropdown.Menu>
+                </Dropdown>
+
+                 
                  </div>
 
             </div>
